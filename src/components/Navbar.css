@@ -1,0 +1,150 @@
+.navbar1 {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+   
+}
+
+.navbar1 .navh1{
+    height: 35%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.navh1 .headericons{
+    height: 80%;
+    width: 30%;
+   
+}
+.headericons i{
+  font-size: 1.5rem;
+}
+
+.headericons i:hover{
+  text-shadow: 2px 2px 20px  red;
+}
+
+.navh1 .headerspace{
+    height: 80%;
+    width: 50%;
+   
+}
+.navh1 .headeroptions{
+    height: 80%;
+    width: 30%;
+    display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  
+   
+}
+
+.iconcon{
+    margin-left: 10%;
+}
+.iconcon i{
+    margin: 0px 3%;
+}
+
+/* //drops */
+/* Navbar Styles */
+
+  
+  /* Divider between items */
+  .divider {
+    width: 1px;
+    height: 16px;
+    background-color: #ddd;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .dropbtn:hover {
+    color: black;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    min-width: 120px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Login/Register link */
+  .login {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .login:hover {
+    color: black;
+  }
+  
+  .navh2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navh2 .logo{
+    width: 30%;
+    margin-left: 5%;
+    color: rgb(250, 233, 233);
+    font-size: larger;
+  }
+
+  .navh2 .logo span{
+    color: rgb(254, 254, 254);
+    font-size: larger;
+  }
+  .navh2 .headersearchbar{
+    width: 55%;
+    margin-left: -15%;
+  }
+  .navh2 .carticons{
+    width: 15%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }

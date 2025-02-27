@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Login from './components/Login';
+import MainPage from './components/MainPage';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import EcommerceLanding from './components/EcommerceLanding';
+import About from './components/About';
+import Dashboard from './components/Dashboard';
+import ProductList from './components/ProductList';
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          isLoggedIn ? 
+          <Navigate to="/main" /> : 
+          <Login setIsLoggedIn={setIsLoggedIn} />
+        }/>
+        <Route path="/main" element={
+          isLoggedIn ? 
+          <MainPage /> : 
+          <Navigate to="/" />
+        }/>
+        <Route path="/home" element={<Dashboard ContentComponent={EcommerceLanding} />} />
+        <Route path="/about" element={<Dashboard ContentComponent={About} />} />
+        <Route path="/products" element={<Dashboard ContentComponent={ProductList} />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
