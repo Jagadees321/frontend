@@ -4,6 +4,9 @@ import Carousel from "react-bootstrap/Carousel";
 import b1 from '../asserts/b1.jpg';
 import b2 from '../asserts/b2.jpg';
 import b3 from '../asserts/b3.jpg';
+import PromoSection from "./Promosection";
+import Categories from "./Categories";
+import FlashDeals from "./FlashDeals";
 
 const EcommerceLanding = () => {
   return (
@@ -56,6 +59,9 @@ const EcommerceLanding = () => {
           </Carousel>
         </div>
       </div>
+      <PromoSection/>
+      <Categories/>
+      <FlashDeals/>
     </div>
   );
 };

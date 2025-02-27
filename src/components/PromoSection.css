@@ -1,0 +1,62 @@
+.promo-container {
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  
+  /* Top Icons Section */
+  .promo-icons {
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .promo-icons i {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .promo-icons h6 {
+    font-weight: bold;
+  }
+  
+  .promo-icons p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Promo Cards Section */
+  .promo-cards {
+    margin-top: 20px;
+  }
+  
+  .promo-card {
+    color: white;
+    padding: 30px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+  }
+  
+  .promo-bg1 {
+    background-image: url("https://demo-51.woovinapro.com/wp-content/uploads/2020/10/banner-04.jpg"); /* Replace with actual shoe image */
+  }
+  
+  .promo-bg2 {
+    background-image: url("https://demo-51.woovinapro.com/wp-content/uploads/2020/10/banner-05.jpg");
+  }
+  
+  .promo-bg3 {
+    background-image: url("https://demo-51.woovinapro.com/wp-content/uploads/2020/10/banner-06.jpg");
+  }
+  
+  .shop-link {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,65 @@
+.categoryparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category{
+    width: 94%;
+   
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "b p g sw"
+                         "wc bags lb l";
+}
+.cb1{
+    grid-area: b;
+}
+.cb2{
+    grid-area: p;
+}
+.cb3{
+    grid-area: g;
+}
+.cb4{
+    grid-area: sw;
+}
+.cb5{
+    grid-area: wc;
+}
+.cb6{
+    grid-area: bags;
+}
+.cb7{
+    grid-area: lb;
+}
+.cb8{
+    grid-area: l;
+}
+.catebox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.catebox:hover{
+    transition: 2s;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 10px gray;
+}
+.catebox .contentcb{
+    width: 70%;
+    height: 100%;
+   text-align: center;
+   align-content: start;
+}
+.catebox .cbimg{
+    width: 30%;
+    height: 80%;
+}
+.catebox img{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+}
