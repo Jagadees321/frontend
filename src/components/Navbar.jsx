@@ -64,12 +64,15 @@ const Navbar = ({ setSelectedCategory }) => {
           <Link to="/products">Products</Link>
           <Link to="/orders">My Orders</Link>
           <Link to="/contactus">Contact Us</Link>
+          <Link to="/cart">cart</Link>
 
           {role === 'admin' && (
             <>
               <Link to="/manageproducts">Manage Products</Link>
               <Link to="/manageusers">Manage Users</Link>
               <Link to="/manageorders">All Orders</Link>
+              
+
             </>
           )}
 

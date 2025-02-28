@@ -4,6 +4,7 @@ import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  const user = JSON.parse(localStorage.getItem("user"));
 
   useEffect(() => {
     axios.get("http://localhost:3685/api/products")
@@ -11,13 +12,20 @@ const ProductList = () => {
       .catch(error => console.error("Error fetching products:", error));
   }, []);
 
-  const handleAddToCart = (productId) => {
-    console.log(`Product ${productId} added to cart (API not ready)`);
+  const handleAddToCart =(productId) => {
+    console.log(productId);
+    
+    axios.post('http://localhost:3685/api/cart',{userid:user._id,productid:productId}).then((res)=>{
+      alert('added to cart')
+    console.log(res.message)}
+    ).catch(error => console.error("posting cart error", error));
+    
+    
   };
 
   const truncateText = (text) => {
     if (!text || text.length < 20) {
-      console.error("Text is too short or missing");
+      //console.error("Text is too short or missing");
       return "Not available";
     }
     return text.length > 20 ? text.substring(0, 20) + "..." : text;
@@ -41,7 +49,7 @@ const ProductList = () => {
                 <h5 className="card-title">{truncateText(product.title)}</h5>
                 <p className="card-text">{truncateText(product.description)}</p>
                 <h6 className="text-primary">${product.price}</h6>
-                <button className="btn btn-dark mt-auto" onClick={() => handleAddToCart(product.id)}>
+                <button className="btn btn-dark mt-auto" onClick={() => handleAddToCart(product._id)}>
                   Add to Cart
                 </button>
               </div>

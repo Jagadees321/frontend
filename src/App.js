@@ -13,6 +13,7 @@ import ManageUsers from './components/ManageUsers';
 import ManageProducts from './components/ManageProducts';
 import Allorders from './components/Allorders';
 import MyOrders from './components/Myorders';
+import Cart from './components/Cart';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/manageproducts" element={<Dashboard ContentComponent={ManageProducts} handleLogout={handleLogout} />} />
         <Route path="/manageorders" element={<Dashboard ContentComponent={Allorders} handleLogout={handleLogout} />} />
         <Route path="/orders" element={<Dashboard ContentComponent={MyOrders} handleLogout={handleLogout} />} />
+        <Route path="/cart" element={<Dashboard ContentComponent={Cart} handleLogout={handleLogout} />} />
       </Routes>
     </Router>
   );
