@@ -1,0 +1,81 @@
+/* ManageUsers.css */
+
+.container {
+    max-width: 95%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Table Styles */
+  .table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  .table tbody tr:hover {
+    background: #f8f9fa;
+    transition: 0.3s;
+  }
+  
+  /* Button Styles */
+  .btn-warning {
+    background: #ffc107;
+    color: #333;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .btn-warning:hover {
+    background: #e0a800;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .btn-danger:hover {
+    background: #c82333;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    border-radius: 12px;
+  }
+  
+  .modal-header {
+    background: #007bff;
+    color: white;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .modal-footer {
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  

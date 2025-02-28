@@ -5,7 +5,11 @@ import './Navbar.css';
 
 const Navbar = ({ setSelectedCategory }) => {
   const categories = ['all', 'electronics', 'clothing', 'books', 'home'];
-
+  const user = JSON.parse(localStorage.getItem('user')); // Retrieve user from localStorage
+  const role = user?.role || 'user'; // Default role is 'user' if not found
+  const handleLogout = () => {
+    localStorage.removeItem('user'); // Clear user data from localStorage
+  };
   return (
     <nav className="navbar1">
       {/* Top Header with Social Icons and User Options */}
@@ -25,7 +29,11 @@ const Navbar = ({ setSelectedCategory }) => {
           <div className="divider"></div>
           <Dropdown title="Currency" options={["INR (₹)", "USD ($)"]} />
           <div className="divider"></div>
-          <a href="#" className="login">Logout</a>
+          {user ? (
+        <Link to="/login" onClick={handleLogout} style={{ marginLeft: '10px' }}>Logout</Link>
+      ) : (
+        <Link to="/login">Login</Link>
+      )}
         </div>
       </div>
 
@@ -50,10 +58,21 @@ const Navbar = ({ setSelectedCategory }) => {
 
       {/* Navigation Links */}
       <div className='navh3'>
-        <nav>
-          <Link to="/home">Home</Link> |
-          <Link to="/about">About</Link> |
+        <nav style={{}}>
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
           <Link to="/products">Products</Link>
+          <Link to="/orders">My Orders</Link>
+          <Link to="/contactus">Contact Us</Link>
+
+          {role === 'admin' && (
+            <>
+              <Link to="/manageproducts">Manage Products</Link>
+              <Link to="/manageusers">Manage Users</Link>
+              <Link to="/manageorders">All Orders</Link>
+            </>
+          )}
+
         </nav>
       </div>
     </nav>

@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css"; // Add custom styles if needed
 import b1 from '../asserts/b1.jpg';
+import PromoSection from "./Promosection";
 
 const About = () => {
   return (
@@ -45,7 +46,9 @@ const About = () => {
             className="img-fluid rounded"
           />
         </div>
+        <PromoSection/>
       </div>
+      
     </div>
   );
 };

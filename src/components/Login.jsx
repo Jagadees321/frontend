@@ -19,7 +19,7 @@ const Login = ({ setIsLoggedIn }) => {
       const response = await axios.post(url, formData);
       
       if (!isRegister) {
-        localStorage.setItem('user', JSON.stringify(response.data));
+        localStorage.setItem('user', JSON.stringify(response.data.data)); 
         setIsLoggedIn(true);
       } else {
         alert('Registration successful! Please login.');

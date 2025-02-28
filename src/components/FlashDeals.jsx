@@ -6,7 +6,7 @@ const FlashDeals = () => {
     {
       name: "BigCtiboi Sweater",
       category: "Accessories, Bottoms",
-      image: "https://demo-51.woovinapro.com/wp-content/uploads/2020/11/banner-01.jpg", // Replace with actual image URL
+      image: "https://demo-51.woovinapro.com/wp-content/uploads/2018/09/product-04.jpg", // Replace with actual image URL
       originalPrice: 29.99,
       discountedPrice: 26.00,
     },
@@ -49,35 +49,29 @@ const FlashDeals = () => {
 
   return (
     <div className="flash-deals-container">
-      {/* Title */}
-      <h2 className="title">
-        Top <span className="highlight">Flash</span> Deals
-      </h2>
+  <h2 className="title">Top <span className="highlight">Flash</span> Deals</h2>
 
-      <div className="deals-grid">
-        {/* Left Banner Image */}
-        <div className="banner">
-          <img
-            src="https://demo-51.woovinapro.com/wp-content/uploads/2020/11/banner-01.jpg" // Replace with actual image URL
-            alt="Flash Deal Banner"
-          />
-        </div>
+  <div className="deals-wrapper">
+    {/* Left Banner */}
+    <div className="banner">
+      <img src="https://demo-51.woovinapro.com/wp-content/uploads/2020/11/banner-01.jpg" alt="Flash Deal Banner" />
+    </div>
 
-        {/* Product Grid */}
-        <div className="products">
-          {products.map((product, index) => (
-            <div key={index} className="product-card">
-              {/* Sale Badge */}
-              {product.discountedPrice && <span className="sale-badge">Sale!</span>}
+    {/* Right Section - Product Grid */}
+    <div className="products-grid">
+      {products.map((product, index) => (
+        <div key={index} className="product-card">
+          {product.discountedPrice && <span className="sale-badge">Sale!</span>}
 
-              {/* Product Image */}
-              <img src={product.image} alt={product.name} className="product-image" />
+          <div className="product-content">
+            {/* Left: Product Image */}
+            <img src={product.image} alt={product.name} className="product-image" />
 
-              {/* Product Details */}
-              <h3 className="product-name">{product.name}</h3>
+            {/* Right: Product Details */}
+            <div className="product-info">
               <p className="product-category">{product.category}</p>
+              <h3 className="product-name">{product.name}</h3>
 
-              {/* Price Section */}
               <div className="product-price">
                 {product.discountedPrice ? (
                   <>
@@ -89,10 +83,13 @@ const FlashDeals = () => {
                 )}
               </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
+  </div>
+</div>
+
   );
 };
 

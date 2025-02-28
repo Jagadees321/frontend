@@ -1,0 +1,140 @@
+.manage-products-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .add-product-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .products-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-desc {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .edit-btn, .delete-btn {
+    width: 100px;
+  }
+  .manage-products-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .add-product-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .products-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-desc {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .edit-btn, .delete-btn {
+    width: 100px;
+  }
+  

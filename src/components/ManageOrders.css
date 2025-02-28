@@ -1,0 +1,32 @@
+.manage-orders-container {
+    padding: 20px;
+  }
+  
+  .manage-orders-table {
+    margin-top: 20px;
+  }
+  
+  .no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .product-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .me-2 {
+    margin-right: 10px;
+  }
+  
